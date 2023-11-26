@@ -59,4 +59,14 @@
 	</div>
 </body>
 
+	<button onclick="copyToClipboard()">Sao chép</button>
+
+<script>
+function copyToClipboard() {
+  var copyText = "key";
+  navigator.clipboard.writeText(copyText);
+  alert("Đã sao chép văn bản: " + copyText);
+}
+</script>
+
 </html>
